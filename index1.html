@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>date_picker_1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@500&family=Lato:wght@100;400&family=Mali&family=Merriweather:wght@300&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:wght@800&family=Poppins&family=Raleway&family=Roboto:wght@100;400;500;700&family=Salsa&display=swap"
+        rel="stylesheet">
+
+    <STYLE>
+        .box-shadow:hover {
+            box-shadow: 20px 22px 24px rgba(23, 18, 63, 0.120028);
+        }
+    </STYLE>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body style="font-family: 'Mulish', sans-serif;">
+    <div class="pt-0.5">
+
+        <div class="md:flex  md:items-center md:justify-between  pb-10 flex-row sm:flex-column pt-7 bg-cyan-50">
+            <div class="flex  items-center justify-between">
+                <div class=" md:ml-20 ml-4 cursor-pointer"><img src="https://i.ibb.co/ZfRPJTT/Group-263.png"
+                        alt="Group-263" border="0"></div>
+                <div onclick="toogleMenu(true) ;tooglecross(true);"
+                    class="text-4xl cursor-pointer md:hidden block lg:hidden">
+
+                    <ion-icon name="menu"></ion-icon>
+                </div>
+            </div>
+
+
+            <div class="flex mt-3.5 md:block lg:block hidden ml-auto" id="Menu">
+                <ul class="md:flex md:items-center text-base text-zins-900 md:ml-auto">
+                    <li class="mr-7  ml-4 md:ml-0 my-4 md:my-0 flex"><a href="" alt=""
+                            class=" hover:border-b hover:border-gray-900 pb-1.5 mb-0 mt-1">Overview</a>
+                        <span>
+                            <ion-icon name="close-outline" onclick="toogleMenu(false);tooglecross(false);"
+                                class="md:hidden block  ml-auto md:m-0 mt-1 ml-8">
+                            </ion-icon>
+                        </span>
+
+                    </li>
+
+                    <li class="pl-0.5 pr-7  ml-4 md:ml-0 my-4 md:my-0"><a href="" a;lt=""
+                            class=" hover:border-b hover:border-gray-900 pb-1.5 mb-0">Pricing</a></li>
+                    <li class="pl-0.5 pr-7   ml-4 md:ml-0 my-4 md:my-0"><a href=" " alt=""
+                            class=" hover:border-b hover:border-gray-900 pb-1.5 mb-0">
+                            Case Studies</a>
+                    </li>
+                    <li Class="pr-7   ml-4 md:ml-0 my-4 md:my-0"><a href="" alt=""
+                            class=" hover:border-b hover:border-gray-900 pb-1.5 mb-0">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+            <button
+                class="text-cyan-700 bg-cyan-100 hover:bg-cyan-200  rounded-sm px-5 py-3 text-sm mr-20  md:ml-auto mt-3.5 ml-3  md:block  hidden"
+                id="cross">Sign
+                In</button>
+        </div>
+
+        <div class="bg-zinc-100">
+
+            <div class="pb-32">
+                <p class="lg:text-8xl  md:text-7xl text-6xl font-black text-center text-gray-800 w-30  pb-3.5  pt-3 ">
+                    SIMPLE PRICING</p>
+                <p class="font-normal  text-xl leading-6 text-zinc-600 text-center md:pt-3 pt-0 mb-1">No contracts. No
+                    surprise
+                    fees.
+                    Register
+                    now or try out the Webbber free trial so you’re<br> absolutely sure
+                    that it’s the right fit for your frontend team</p>
+                <div class="flex md:flex-row flex-col justify-center md:mt-12 mt-6">
+                    <button
+                        class="rounded-sm  bg-gradient-to-l from-cyan-700 to-sky-600 text-zinc-50  text-xs items-center py-4 px-6 hover:from-cyan-800 hover:to-sky-400">
+
+                        MONTHLY
+                    </button>
+                    <button
+                        class="rounded-sm  bg-cyan-100 text-cyan-700  text-xs items-center py-4 px-8 hover:bg-cyan-200">
+                        YEARLY
+                    </button>
+                </div>
+
+
+
+            </div>
+            <div>
+                <div class="grid grid-cols-4 gap-0">
+                    <div class=" md:pt-48 pt-36">
+
+                        <div class="font-normal  text-base leading-4 text-zinc-800 pl-4 md:pb-12 pb-6">All limited links
+                        </div>
+                        <div class="font-normal  text-base leading-4 text-zinc-800 pl-4 md:pb-12 pb-10">Own analytics
+                            platform
+                        </div>
+                        <div class="font-normal  text-base leading-4 text-zinc-800 pl-4 md:pb-12 pb-10">Chat support
+                        </div>
+                        <div class="font-normal  text-base leading-4 text-zinc-800 pl-4 md:pb-12 pb-10">Number of users
+                        </div>
+                        <div class="font-normal  text-base leading-4 text-zinc-800 pl-4 md:pb-12 pb-10">Optimize
+                            hashtags
+                        </div>
+                        <div class="font-normal  text-base leading-4 text-zinc-800 pl-4 md:pb-12 pb-6">Account managers
+                        </div>
+                        <div class="font-normal  text-base leading-4 text-zinc-800 pl-4 md:pb-12 pb-6">Number of
+                            articles</div>
+                        <div class="font-normal  text-base leading-4 text-zinc-800 pl-4 md:pb-12 pb-6">Satisfaction
+                            guaranteed
+                        </div>
+                    </div>
+                    <div class="justify-center mx-auto text-center md:p-12 p-0 hover:bg-white rounded-sm box-shadow">
+
+                        <div class="text-zinc-600 font-extrabold leading-9 pt-4 pb-5"
+                            style="font-family: 'Nunito', sans-serif; font-size:28px;">Starter</div>
+                        <div class="flex justify-center mx-auto pb-10">
+                            <P style="font-family: 'Mulish" class="font-bold md:text-4xl text-3xl text-zinc-800">$20</P>
+                            <p class="md:text-base text-xs font-medium leading-4 text-zinc-600 pt-4 md:pl-1 p-o">/month
+                            </p>
+                        </div>
+                        <div><img class="justify-center  mx-auto pb-12" src="https://i.ibb.co/mtnwRv3/Path.png"
+                                alt="Path" border="0">
+                        </div>
+                        <div><img class="justify-center  mx-auto pb-12" src="https://i.ibb.co/mtnwRv3/Path.png"
+                                alt="Path" border="0">
+                        </div>
+                        <div><img class="justify-center  mx-auto pb-12" src="https://i.ibb.co/mtnwRv3/Path.png"
+                                alt="Path" border="0">
+                        </div>
+                        <div class="font-normal  text-base leading-4 text-zinc-800 text-center pb-12">1 user</div>
+                        <div class="pb-12"><img class="justify-center  mx-auto" src="https://i.ibb.co/mtnwRv3/Path.png"
+                                alt="Path" border="0">
+                        </div>
+                        <div><img class="justify-center  mx-auto pb-12" src="https://i.ibb.co/J2NSZqz/close.png"
+                                alt="close" border="0"></div>
+                        <div><img class="justify-center  mx-auto pb-12" src="https://i.ibb.co/J2NSZqz/close.png"
+                                alt="close" border="0"></div>
+                        <div><img class="justify-center  mx-auto pb-12" src="https://i.ibb.co/mtnwRv3/Path.png"
+                                alt="Path" border="0">
+                        </div>
+                        <div class="justify-center mx-auto">
+                            <button
+                                class="font-normal font-semibold text-cyan-700 leading-4 bg-cyan-100 py-4 px-9 hover:bg-cyan-200">Choose
+                                plan</button>
+                        </div>
+                    </div>
+                    <div class=" justify-center mx-auto text-center md:p-12 p-0 hover:bg-white rounded-sm box-shadow">
+                        <div class="bg-clip-text text-transparent bg-gradient-to-bl from-cyan-700 to-sky-600 font-extrabol leading-9 text-center pt-4 pb-5"
+                            style="font-family: 'Nunito', sans-serif; font-size:28px;">
+                            Pro</div>
+                        <div class="flex justify-center mx-auto pb-10">
+                            <P style="font-family: 'Mulish" class="font-bold text-zinc-800  md:text-4xl text-3xl">$100
+                            </P>
+                            <p class="md:text-base text-xs font-medium leading-4 text-zinc-600 pt-4  Md:pl-1 p-0">/month
+                            </p>
+
+                        </div>
+                        <div><img class="justify-center  mx-auto pb-12" src="https://i.ibb.co/mtnwRv3/Path.png"
+                                alt="Path" border="0">
+                        </div>
+                        <div><img class="justify-center  mx-auto pb-12" src="https://i.ibb.co/mtnwRv3/Path.png"
+                                alt="Path" border="0">
+                        </div>
+                        <div><img class="justify-center  mx-auto pb-12" src="https://i.ibb.co/mtnwRv3/Path.png"
+                                alt="Path" border="0">
+                        </div>
+                        <div class="font-normal  text-base leading-4 text-zinc-800 text-center pb-12">3 users</div>
+                        <div><img class="justify-center  mx-auto pb-12" src="https://i.ibb.co/mtnwRv3/Path.png"
+                                alt="Path" border="0">
+                        </div>
+                        <div><img class="justify-center  mx-auto pb-12" src="https://i.ibb.co/mtnwRv3/Path.png"
+                                alt="Path" border="0">
+                        </div>
+                        <div><img class="justify-center  mx-auto pb-12" src="https://i.ibb.co/J2NSZqz/close.png"
+                                alt="close" border="0"></div>
+                        <div><img class="justify-center  mx-auto pb-12" src="https://i.ibb.co/mtnwRv3/Path.png"
+                                alt="Path" border="0">
+                        </div>
+                        <div class="justify-center mx-auto">
+                            <button
+                                class="font-normal font-semibold text-white leading-4 b  bg-gradient-to-l from-cyan-700 to-sky-600 py-4 px-9 hover:from-cyan-800 hover:to-sky-400">Choose
+                                plan</button>
+                        </div>
+
+                    </div>
+                    <div class=" justify-center mx-auto text-center md:p-12 p-0 hover:bg-white rounded-sm box-shadow">
+                        <div class="text-zinc-600 font-extrabold leading-9 text-center pt-4 pb-5"
+                            style="font-family: 'Nunito', sans-serif; font-size: 28px;">Enterprise</div>
+
+                        <div class="flex text-center justify-center mx-auto pb-10">
+                            <P style="font-family: 'Mulish" class="font-bold md:text-4xl  text-3xl text-zinc-800">$200
+                            </P>
+                            <p class="md:text-base text-xs font-medium leading-4 text-zinc-600 pt-4  md:pl-1 pl-0">
+                                /month</p>
+                        </div>
+                        <div><img class="justify-center  mx-auto pb-12" src="https://i.ibb.co/mtnwRv3/Path.png"
+                                alt="Path" border="0">
+                        </div>
+                        <div><img class="justify-center  mx-auto pb-12" src="https://i.ibb.co/mtnwRv3/Path.png"
+                                alt="Path" border="0">
+                        </div>
+                        <div><img class="justify-center  mx-auto pb-12" src="https://i.ibb.co/mtnwRv3/Path.png"
+                                alt="Path" border="0">
+                        </div>
+                        <div class="font-normal  text-base leading-4 text-zinc-800 text-center pb-12">Unlimited</div>
+                        <div><img class="justify-center  mx-auto pb-12" src="https://i.ibb.co/mtnwRv3/Path.png"
+                                alt="Path" border="0">
+                        </div>
+                        <div><img class="justify-center  mx-auto pb-12" src="https://i.ibb.co/mtnwRv3/Path.png"
+                                alt="Path" border="0">
+                        </div>
+                        <div><img class="justify-center  mx-auto pb-12" src="https://i.ibb.co/mtnwRv3/Path.png"
+                                alt="Path" border="0">
+                        </div>
+                        <div><img class="justify-center  mx-auto pb-12" src="https://i.ibb.co/mtnwRv3/Path.png"
+                                alt="Path" border="0">
+                        </div>
+                        <div class="justify-center mx-auto">
+                            <button
+                                class="font-normal font-semibold text-cyan-700 leading-4 bg-cyan-100 py-4 px-9 hover:bg-cyan-200">Choose
+                                plan</button>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="mt-52">
+                <p class="font-black md:text-6xl text-4xl text-zinc-800 text-center mt-28 mb-28 pb-3">Frequently asked
+                    questions</p>
+                <div class="flex md:flex-row flex-col justify-center mx-auto">
+                    <div class="flex flex-col pl-3">
+                        <div class="hover:shadow-lg mb-14">
+                            <p class="text-2xl font-semibold text-zinc-800 pb-3">How do I use the webber for 3+ members?
+                            </p>
+                            <P class="text-base font-normal text-zinc-600">Magnam reprehenderit quisquam corporis sunt
+                                ratione. Non magnam et.<br> Suscipit quia et
+                                aspernatur officiis quo. Officia sed eaque enim doloribus quisquam mollitia nihil.</P>
+                        </div>
+
+
+                        <div class="hover:shadow-lg mb-14">
+                            <p class="text-2xl font-semibold text-zinc-800 pb-3">Whats the best way to make the most out
+                                of
+                                it?</p>
+                            <P class="text-base font-normal text-zinc-600">Magnam reprehenderit quisquam corporis sunt
+                                ratione. Non magnam et. <br>Suscipit quia et aspernatur officiis quo. Officia sed eaque
+                                enim
+                                doloribus quisquam mollitia nihil..</P>
+                        </div>
+
+
+                        <div class="hover:shadow-lg mb-14">
+                            <p class="text-2xl font-semibold text-zinc-800 pb-3">How do I use the webber for 3+ members
+                            </p>
+                            <P class="text-base font-normal text-zinc-600">Magnam reprehenderit quisquam corporis sunt
+                                ratione. Non magnam et. <br>Suscipit quia et aspernatur officiis quo. Officia sed eaque
+                                enim
+                                doloribus quisquam mollitia nihil..</P>
+                        </div>
+                    </div>
+                    <div class="flex flex-col pl-3">
+                        <div class="hover:shadow-lg mb-14">
+                            <p class="text-2xl font-semibold text-zinc-800 pb-3">What does early access mean</p>
+                            <P class="text-base font-normal text-zinc-600">Magnam reprehenderit quisquam corporis sunt
+                                ratione. Non magnam et.<br> Suscipit quia et aspernatur officiis quo. Officia sed eaque
+                                enim
+                                doloribus quisquam mollitia nihil.</P>
+                        </div>
+
+                        <div class="hover:shadow-lg mb-14">
+                            <p class="text-2xl font-semibold text-zinc-800 pb-3">How are enterprise package customers
+                                accomodated?</p>
+                            <P class="text-base font-normal text-zinc-600">Magnam reprehenderit quisquam corporis sunt
+                                ratione. Non magnam et. <br>Suscipit quia et aspernatur officiis quo. Officia sed eaque
+                                enim
+                                doloribus quisquam mollitia nihil.</P>
+                        </div>
+
+                        <div class="hover:shadow-lg mb-14">
+                            <p class="text-2xl font-semibold text-zinc-800 pb-3">How do I use the webber for 3+ members
+                            </p>
+                            <P class="text-base font-normal text-zinc-600">Magnam reprehenderit quisquam corporis sunt
+                                ratione. Non magnam et. <br>Suscipit quia et aspernatur officiis quo. Officia sed eaque
+                                enim
+                                doloribus quisquam mollitia nihil.</P>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="mt-20 py-14 text-center  bg-gradient-to-bl from-cyan-700 to-sky-600">
+                <p class="font-extrabold text-5xl text-white mb-4">
+                    Get results, no matter what
+                </p>
+
+                <p class="font-medium text-base text-white mt-0.5 mb-8 ">
+                    Start your free trial today, you get all the pro features for 1 month for you<br> and your team. If
+                    you
+                    think its not for you can easily unsubscribe
+                </p>
+                <button class="text-cyan-700 font-medium py-4 px-8 bg-white hover:bg-cyan-100">Start free trial</button>
+            </div>
+
+            <div
+                class="mt-2 flex  md:flex-row flex-col  justify-center items-center  mx-auto pl-32 bg-gray-100 pt-20 pb-14 pr-48">
+                <div class="mr-36 w-80 mb-1  justify-center md:pl-0 pl-36">
+                    <img src="https://i.ibb.co/ZfRPJTT/Group-263.png" alt="Group-263" border="0">
+                    <P class="font-normal text-sm leading-6 text-gray-600 mt-8">Copyright © 2021 WEBBER.</P>
+                    <p class="font-normal text-sm leading-6 text-gray-600 pt-2 pb-10">All rights reserved</p>
+                    <div class="flex"><img src="https://i.ibb.co/L1FNw6s/Twitter.png" alt="Twitter" border="0">
+                        <img src="https://i.ibb.co/9TZXq56/Youtube.png" alt="Youtube" border="0">
+                    </div>
+
+
+                </div>
+
+                <div class="w-40 pr-8 mb-1 md:mt-0 mt-8 ">
+                    <div class="md:font-medium text-xl leading-7 font-gray-800 pb-3 w-40 font-bold">Company
+                    </div>
+                    <div class="font-normal text-base text-gray-800 pt-4 w-40 hover:underline"><a href="" alt="">About
+                            us</a>
+                    </div>
+                    <div class="font-normal text-base text-gray-800 pt-3 hover:underline"><a href="" alt="">
+                            Blog
+                        </a></div>
+                    <div class="font-normal text-base text-gray-800 pt-3 hover:underline"><a href="" alt="">Contact
+                            us</a></div>
+                    <div class="font-normal text-base text-gray-800 pt-3 hover:underline"><a href="" alt="">
+                            Pricing
+                        </a></div>
+                    <div class="font-normal text-base text-gray-800 pt-3 hover:underline"><a href="" alt="">
+                            Testimonials
+                        </a></div>
+                </div>
+                <div class="w-40 pr-8 mb-1 md:mt-0 mt-8">
+                    <div class="md:font-medium text-xl leading-7 font-gray-800 pb-3 w-40 font-bold">Support
+                    </div>
+                    <div class="font-normal text-base text-gray-800 pt-4 w-40 hover:underline"><a href="" alt="">Help
+                            center</a>
+                    </div>
+                    <div class="font-normal text-base text-gray-800 pt-3 hover:underline"><a href="" alt="">
+                            Terms of service
+                        </a></div>
+                    <div class="font-normal text-base text-gray-800 pt-3 hover:underline"><a href="" alt="">Legal</a>
+                    </div>
+                    <div class="font-normal text-base text-gray-800 pt-3 hover:underline"><a href="" alt="">
+                            Privacy policy
+                        </a></div>
+                    <div class="font-normal text-base text-gray-800 pt-3 hover:underline"><a href="" alt="">
+                            Status
+                        </a></div>
+                </div>
+                <div class="md:mt-0 cursor-pointer">
+                    <div class="md:font-medium text-xl leading-7 font-gray-800 pb-3 font-bold">Get Updates and more
+                    </div>
+                    <div class="flex">
+                        <Input type="text" placeholder="Your email address"
+                            class="pl-3 pt-2 pb-1.5 text-sm font-normal leading-6 text-gray-600 pr-16 focus:outline-cyan-600"
+                            button="Subscribe">
+                        <button
+                            class="h-10 w-11 bg-gradient-to-l from-cyan-700 to-sky-600  items-center justify-center flex focus:outline-cyan-600"><img
+                                src="https://i.ibb.co/pj1CNrG/Vectora.png" alt="Vectora" border="0"
+                                class="justify-center items-center">
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <script>
+                function toogleMenu(flag) {
+                    value = document.getElementById("Menu");
+                    if (flag) { value.classList.remove("hidden"); }
+                    else { value.classList.add("hidden"); }
+                }
+
+                function tooglecross(flag) {
+                    value = document.getElementById("cross");
+                    if (flag) { value.classList.remove("hidden"); }
+                    else { value.classList.add("hidden"); }
+                }
+            </script>
+
+</body>
