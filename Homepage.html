@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>date_picker_1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@500&family=Lato:wght@100;400&family=Mali&family=Merriweather:wght@300&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins&family=Raleway&family=Roboto:wght@100;400;500;700&family=Salsa&display=swap"
+        rel="stylesheet">
+
+    <STYLE>
+
+    </STYLE>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body style="font-family: 'Mulish', sans-serif;">
+    <div class="pt-0.5"
+        style="background: linear-gradient(180deg, rgba(165, 243, 252, 0.1) 23.31%, rgba(165, 243, 252, 0.05) 109.14%);">
+        <div class="md:flex  md:items-center md:justify-between pb-3 flex-row sm:flex-column pt-7">
+            <div class="flex  items-center justify-between">
+                <div class=" md:ml-20 ml-4 cursor-pointer"><img src="https://i.ibb.co/ZfRPJTT/Group-263.png"
+                        alt="Group-263" border="0"></div>
+                <div onclick="toogleMenu(true) ;tooglecross(true);"
+                    class="text-4xl cursor-pointer md:hidden block lg:hidden">
+
+                    <ion-icon name="menu"></ion-icon>
+                </div>
+            </div>
+
+
+            <div class="flex mt-3.5 md:block lg:block hidden ml-auto" id="Menu">
+                <ul class="md:flex md:items-center text-base text-zins-900 md:ml-auto">
+                    <li class="mr-7  ml-4 md:ml-0 my-4 md:my-0 flex"><a href="" alt=""
+                            class=" hover:border-b hover:border-gray-900 pb-1.5 mb-0 mt-1">Overview</a>
+                        <span>
+                            <ion-icon name="close-outline" onclick="toogleMenu(false);tooglecross(false);"
+                                class="md:hidden block  ml-auto md:m-0 mt-1 ml-8">
+                            </ion-icon>
+                        </span>
+
+                    </li>
+
+                    <li class="pl-0.5 pr-7  ml-4 md:ml-0 my-4 md:my-0"><a href="" a;lt=""
+                            class=" hover:border-b hover:border-gray-900 pb-1.5 mb-0">Pricing</a></li>
+                    <li class="pl-0.5 pr-7   ml-4 md:ml-0 my-4 md:my-0"><a href=" " alt=""
+                            class=" hover:border-b hover:border-gray-900 pb-1.5 mb-0">
+                            Case Studies</a>
+                    </li>
+                    <li Class="pr-7   ml-4 md:ml-0 my-4 md:my-0"><a href="" alt=""
+                            class=" hover:border-b hover:border-gray-900 pb-1.5 mb-0">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+            <button
+                class="text-cyan-700 bg-cyan-100 hover:bg-cyan-200  rounded-sm px-5 py-3 text-sm mr-20  md:ml-auto mt-3.5 ml-3  md:block  hidden"
+                id="cross">Sign
+                In</button>
+        </div>
+
+
+
+        <div>
+            <p
+                class="lg:text-8xl  md:text-7xl text-6xl font-black text-center text-gray-800 w-30 md:mt-28 mt-10 pb-3.5 ">
+                DEPLOY YOUR<br> FRONT-END</p>
+        </div>
+        <div class="flex md:flex-row flex-col items-center justify-center md:pt-16 pt-10 mb-2">
+            <button
+                class="rounded-sm bg-gradient-to-l from-cyan-700 to-sky-600  py-4 px-8 text-white text-lg md:mr-5 mr-0  hover:from-cyan-800 hover:to-sky-400">Get
+                started</button>
+            <button class="rounded-sm bg-cyan-100 py-4 px-8 text-cyan-700 text-lg md:mt-0 mt-5 hover:bg-cyan-200">Learn
+                more</button>
+
+
+
+        </div>
+        <div class="flex flex-col ">
+            <div class="container-xl md:mt-24 mt-0  bg-gradient-to-bl from-cyan-700 to-sky-600 md:block hidden "
+                style="height:268px;"></div>
+
+
+            <Div class="items-center justify-center mx-auto md:block hidden"><img
+                    src="https://i.ibb.co/dBHvb71/Light-Theme-pc.png" alt="Light-Theme-pc" border="0" class="-mt-44 ">
+            </Div>
+
+        </div>
+    </div>
+    <div>
+        <div class="md:pt-44 pt-12 mb-40">
+            <p class="md:font-black font-extrabold text-6xl text-center text-gray-800 mb-20">
+                Tailor-made features</p>
+
+            <div class="items-center justify-center text-center md:mt-2.5 mt-0">
+                <div class="flex  md:flex-row flex-col mx-auto justify-center">
+                    <div class="md:mt-0 mt-16 mx-auto hover:shadow-lg p-2">
+                        <img src="https://i.ibb.co/YBJxw2y/01.png" alt="01" class="justify-center items-center mx-auto"
+                            border="0">
+                        <p class="font-semibold text-2xl leading-8 text-gray-800 mt-6 mb-2">Robust workflow</p>
+                        <p class="text-lg  font-zinc-600 leading-7 font-noraml">Lorem ipsum dolor sit amet,
+                            consectetur<br>
+                            adipiscing elit.
+                            Sed erat
+                            nibh tristique.</p>
+
+                    </div>
+                    <div class="md:mt-0 mt-16 mx-auto  hover:shadow-lg p-2">
+                        <img src="https://i.ibb.co/XD6rV3S/02.png" alt="02" class="justify-center items-center mx-auto"
+                            border="0">
+                        <p class="font-semibold text-2xl leading-8 text-gray-800 mt-6 mb-2">
+                            Flexibility
+                        </p>
+                        <p class="text-lg font-zinc-600 leading-7 font-noraml">Lorem ipsum dolor sit amet, consectetur
+                            <br>adipiscing elit. Sed erat nibh tristique.
+                        </p>
+                    </div>
+                    <div class="md:mt-0 mt-16 mx-auto  hover:shadow-lg p-2"><img
+                            src="https://i.ibb.co/StH4vFx/Group.png" alt="Group"
+                            class="justify-center items-center mx-auto" border="0">
+                        <P class="font-semibold text-2xl leading-8 text-gray-800 mt-6 mb-2">
+                            User friendly
+                        </P>
+                        <p class="text-lg font-zinc-600 leading-7 font-noraml">
+                            Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit. Sed erat nibh tristique.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex mx-auto justify-center   md:flex-row flex-col">
+                    <div class=" mx-auto mt-16  hover:shadow-lg p-2">
+                        <img src="https://i.ibb.co/D4xxdDP/Groupd.png" class="justify-center items-center mx-auto"
+                            alt="Groupd" border="0">
+                        <p class="font-semibold text-2xl leading-8 text-gray-800 mt-6 mb-2">Multiple layouts</p>
+                        <p class="text-lg font-zinc-600 leading-7 font-noraml">Lorem ipsum dolor sit amet,
+                            consectetur<br>
+                            adipiscing elit.
+                            Sed erat
+                            nibh tristique.</p>
+
+                    </div>
+                    <div class="mt-16 mx-auto  hover:shadow-lg p-2"><img src="https://i.ibb.co/rZDnNtM/Group1.png"
+                            class="justify-center items-center mx-auto" alt="Group1" border="0">
+                        <p class="font-semibold text-2xl leading-8 text-gray-800 mt-6 mb-2">
+                            Better components
+                        </p>
+                        <p class="text-lg font-zinc-600 leading-7 font-noraml">Lorem ipsum dolor sit amet, consectetur
+                            <br>adipiscing elit. Sed erat nibh tristique.
+                        </p>
+                    </div>
+                    <div class="mt-16 mx-auto  hover:shadow-lg p-2"><img src="https://i.ibb.co/M5pMMh1/08.png" alt="08"
+                            border="0" class="justify-center items-center mx-auto">
+                        <P class="font-semibold text-2xl leading-8 text-gray-800 mt-6 mb-2">
+                            Well organised
+                        </P>
+                        <p class="text-lg font-zinc-600 leading-7 font-noraml">
+                            Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit. Sed erat nibh tristique.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-2 relative md:mb-64 mb-32 justify-center items-center mx-auto px-4">
+
+            <p class=" md:font-black font-extrabold text-6xl text-center text-gray-800 mb-24">
+                How it works</p>
+            <div class="flex  ml-auto justify-center items-center">
+                <div class="md:mr-40 ml-8 md:ml-0 " style="width:570px;">
+                    <p class="md:font-extrabold font-bold text-5xl text-gray-800 pb-6">Sign-up</p>
+                    <p class="font-normal text-xl text-gray-600 pb-8 ">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing
+                        elit.
+                        Erat
+                        vitae a consectetur dolor. Elementum
+                        habitant urna, ac quis, laoreet urna purus. Aliquam at est vel auctor rhoncus et. Sit ac
+                        enim,
+                        malesuada
+                        mattis. Dignissim nibh augue posuer</p>
+                    <div class="flex">
+                        <button
+                            class="font-normal text-base text-white px-8 py-4 bg-gradient-to-l from-cyan-700 to-sky-600 md:mr-72 mr-44  pr-6 hover:from-cyan-800 hover:to-sky-400">Learn
+                            more</button>
+                        <div class="flex">
+                            <div class="mt-5 cursor-pointer">
+                                <svg width="22" height="16" viewBox="0 0 22 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.292893 7.29289C-0.0976314 7.68342 -0.0976315 8.31658 0.292892 8.7071L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34314C8.46159 1.95262 8.46159 1.31946 8.07107 0.928931C7.68054 0.538407 7.04738 0.538406 6.65686 0.928931L0.292893 7.29289ZM22 7L1 7L1 9L22 9L22 7Z"
+                                        fill="#1F2937" class="cursor-pointer" />
+                                </svg>
+                            </div>
+                            <div class="bg-cyan-600 rounded-full justify-center items-center ml-6 flex cursor-pointer"
+                                style="width:61px; height:60px;">
+
+                                <svg width="23" height="20" viewBox="0 0 23 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M21.8839 10.8839C22.372 10.3957 22.372 9.60427 21.8839 9.11612L13.9289 1.16117C13.4408 0.673011 12.6493 0.673011 12.1612 1.16117C11.673 1.64932 11.673 2.44078 12.1612 2.92893L19.2322 10L12.1612 17.0711C11.673 17.5592 11.673 18.3507 12.1612 18.8388C12.6493 19.327 13.4408 19.327 13.9289 18.8388L21.8839 10.8839ZM-1.09278e-07 11.25L21 11.25L21 8.75L1.09278e-07 8.75L-1.09278e-07 11.25Z"
+                                        fill="white" class="cursor-pointer" />
+
+                                </svg>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="flex pl-3.5">
+                    <div class="z-20"><img src="https://i.ibb.co/5TTgQZs/i-Phone-XS.png" alt="i-Phone-XS" border="0"
+                            class="z-20 lg:block hidden">
+                    </div>
+
+                    <div><img src="https://i.ibb.co/L07vK94/Group-242.png" alt="Group-242" border="0"
+                            class="absolute mt-14 -ml-64 z-0 lg:block hidden">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div>
+            <Div class=" bg-gradient-to-r from-cyan-700 to-sky-600 flex md:pt-20 pt-0  pb-16 w-full">
+
+                <div class=" flex flex-col md:flex-row justify-center items-center mx-auto w-9/12">
+                    <div class=" flex mt-16 md:mb-0 mb-4">
+                        <div><img src="https://i.ibb.co/PW8fZ19/Picture.png" alt="Picture" border="0">
+                        </div>
+                        <div class="pl-4 text-left">
+                            <p class="font-semibold font-lg leading-7 text-white tracking-tight w-44  ">Jenny Wilson</p>
+                            <p class="font-normal text-sm leading-6 text-gray-50 w-44">Vice President</p>
+                        </div>
+
+                    </Div>
+                    <div class="flex mt-2">
+                        <Div class="pr-4"><svg width="28" height="23" viewBox="0 0 28 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12.264 10.6001V22.1921H0.528V14.7041C0.528 11.9201 1.032 9.40012 2.04 7.14412C3.048 4.88812 4.728 2.56012 7.08 0.16012L11.328 3.54412C8.928 5.99212 7.464 8.34412 6.936 10.6001H12.264ZM27.312 10.6001V22.1921H15.576V14.7041C15.576 11.9201 16.08 9.40012 17.088 7.14412C18.096 4.88812 19.776 2.56012 22.128 0.16012L26.376 3.54412C23.976 5.99212 22.512 8.34412 21.984 10.6001H27.312Z"
+                                    fill="white" />
+                            </svg></Div>
+                        <p class="font-medium font-lg leading-8 text-white text-justify">
+                            Eos enim quo est necessitatibus nobis
+                            consectetur rerum qui dolores. Quia commodi
+                            similique est sed aut. Aspernatur voluptas nisi tenetur voluptates iusto debitis ex
+                            voluptatem odit. Repudiandae et et quod et. Enim sit delectus numquam. Molestiae aut
+                            voluptatem. Quia, commodi similique est sed aut. Aspernatur voluptas nisi tenetur
+                            voluptates iusto debitis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+    <div class="mt-40 mb-2.5">
+
+        <p class="md:font-black font-extrabold text-6xl text-center text-gray-800 mb-16 md:mx-0 mx-4">
+            Brands using our services</p>
+        <div class="mt-2.5">
+
+            <div class="flex md:flex-row flex-col justify-center gap-0 mx-auto items-center">
+                <div class="items-center justify-center mr-5 hover:shadow-lg"><img
+                        src="https://i.ibb.co/1ZtHcVy/Microsoft-Logo.png" alt="Microsoft-Logo" border="0"></div>
+                <div class=" hover:shadow-lg"><img src="https://i.ibb.co/zG1bsrD/OYO-Logo.png" alt="OYO-Logo" border="0"
+                        class="items-center justify-center pr-5"></div>
+                <div><img src="https://i.ibb.co/BBBBNcp/Walmart-Logo.png" alt="Walmart-Logo" border="0"
+                        class="items-center justify-center mr-5 hover:shadow-lg"></div>
+                <div><img src="https://i.ibb.co/68nMcJJ/Group-261.png" alt="Group-261" border="0"
+                        class="items-center justify-center hover:shadow-lg"></div>
+            </div>
+            <div class="flex md:flex-row flex-col justify-center mx-auto items-center">
+                <div><img src="https://i.ibb.co/NjMVKGr/Fed-Ex-Logo.png" alt="Fed-Ex-Logo" border="0"
+                        class="items-center justify-center mr-5 mt-8 hover:shadow-lg"></div>
+                <div><img src="https://i.ibb.co/6ZfqwKL/Book-My-Show-Logo.png" alt="Book-My-Show-Logo" border="0"
+                        class="items-center justify-center mr-5 mt-8 hover:shadow-lg"></div>
+                <div><img src="https://i.ibb.co/qrGPZ0w/Amazon-Logo.png" alt="Amazon-Logo" border="0"
+                        class="items-center justify-center  mr-5 mt-8 hover:shadow-lg"></div>
+                <div><img src="https://i.ibb.co/BTG7Yd5/Google-Logo.png" alt="Google-Logo" border="0"
+                        class="items-center justify-center mt-8 hover:shadow-lg"></div>
+
+            </div>
+        </div>
+
+
+    </div>
+    <div class="md:mt-72 mt-36 mb-36">
+        <div class=" bg-gradient-to-r from-cyan-700 to-sky-600 justify-center pt-20 h-96 relative px-4">
+
+            <p class="md:font-black font-extrabold text-6xl text-center text-white mb-6">By the numbers</p>
+            <p class="text-lg font-normal text-white text-center mb-20">5 years, consistent quality and you get
+                results.
+                No
+                matter what
+            </p>
+            <div class="flex flex-row justify-center items-center">
+                <div class=" bg-white top-90 left-90 w-64 h-56 pt-16 rounded-2xl mr-8" style=" box-shadow: 0px 1px 2px rgba(0, 0, 0,
+                0.06), 0px 1px 3px rgba(0, 0, 0, 0.1); ">
+                    <P class=" font-extrabold md:text-5xl  text-4xl text-center text-gray-800 pt-3">40+</P>
+                    <p class="font-normal text-gray-600 text-lg text-center pt-4">Happy Clients</p>
+                </div>
+                <div class="bg-white top-90 left-90 w-64 h-56 pt-16 rounded-2xl mr-8" style=" box-shadow: 0px 1px 2px rgba(0, 0, 0,
+                0.06), 0px 1px 3px rgba(0, 0, 0, 0.1); ">
+                    <P class=" font-extrabold md:text-5xl  text-4xl  text-center text-gray-800 pt-3">540+</P>
+                    <p class="font-normal text-gray-600 text-lg text-center pt-4">Projects Completed</p>
+                </div>
+                <div class=" bg-white top-90 left-90 w-64 h-56 pt-16 rounded-2xl mr-8" style=" box-shadow: 0px 1px 2px rgba(0, 0, 0,
+                0.06), 0px 1px 3px rgba(0, 0, 0, 0.1); ">
+                    <P class=" font-extrabold md:text-5xl  text-4xl  text-center text-gray-800 pt-3">300</P>
+                    <p class="font-normal text-gray-600 text-lg text-center pt-4">Dedicated Members</p>
+                </div>
+                <div class=" bg-white top-90 left-90 w-64 h-56 pt-16 rounded-2xl" style=" box-shadow: 0px 1px 2px rgba(0, 0, 0,
+                0.06), 0px 1px 3px rgba(0, 0, 0, 0.1); ">
+                    <P class=" font-extrabold md:text-5xl  text-4xl  text-center text-gray-800 pt-3">25+</P>
+                    <p class="font-normal text-gray-600 text-lg text-center pt-4">Awards Won</p>
+                </div>
+            </div>
+        </div>
+        <div class="mt-48 mb-36">
+            <p class="md:font-black font-extrabold text-6xl  text-center text-gray-800 mb-1">Build the next big thing
+                and ship
+                to<br>
+                market
+                faster </p>
+            <div class="justify-center mx-auto flex pt-14">
+                <button
+                    class=" bg-gradient-to-l from-cyan-700 to-sky-600 py-4 pl-8 pr-7 mx-auto font-normal text-lg text-white hover:from-cyan-800 hover:to-sky-400">
+                    Download Now
+
+                </button>
+            </div>
+        </div>
+
+    </div>
+    <div
+        class="mt-2 flex  md:flex-row flex-col  justify-center items-center  mx-auto pl-32 bg-gray-100 pt-20 pb-14 pr-48">
+        <div class="mr-36 w-80 mb-1  justify-center md:pl-0 pl-36">
+            <img src="https://i.ibb.co/ZfRPJTT/Group-263.png" alt="Group-263" border="0">
+            <P class="font-normal text-sm leading-6 text-gray-600 mt-8">Copyright © 2021 WEBBER.</P>
+            <p class="font-normal text-sm leading-6 text-gray-600 pt-2 pb-10">All rights reserved</p>
+            <div class="flex"><img src="https://i.ibb.co/L1FNw6s/Twitter.png" alt="Twitter" border="0">
+                <img src="https://i.ibb.co/9TZXq56/Youtube.png" alt="Youtube" border="0">
+            </div>
+
+
+        </div>
+
+        <div class="w-40 pr-8 mb-1 md:mt-0 mt-8 ">
+            <div class="md:font-medium text-xl leading-7 font-gray-800 pb-3 w-40 font-bold">Company
+            </div>
+            <div class="font-normal text-base text-gray-800 pt-4 w-40 hover:underline"><a href="" alt="">About us</a>
+            </div>
+            <div class="font-normal text-base text-gray-800 pt-3 hover:underline"><a href="" alt="">
+                    Blog
+                </a></div>
+            <div class="font-normal text-base text-gray-800 pt-3 hover:underline"><a href="" alt="">Contact us</a></div>
+            <div class="font-normal text-base text-gray-800 pt-3 hover:underline"><a href="" alt="">
+                    Pricing
+                </a></div>
+            <div class="font-normal text-base text-gray-800 pt-3 hover:underline"><a href="" alt="">
+                    Testimonials
+                </a></div>
+        </div>
+        <div class="w-40 pr-8 mb-1 md:mt-0 mt-8">
+            <div class="md:font-medium text-xl leading-7 font-gray-800 pb-3 w-40 font-bold">Support
+            </div>
+            <div class="font-normal text-base text-gray-800 pt-4 w-40 hover:underline"><a href="" alt="">Help center</a>
+            </div>
+            <div class="font-normal text-base text-gray-800 pt-3 hover:underline"><a href="" alt="">
+                    Terms of service
+                </a></div>
+            <div class="font-normal text-base text-gray-800 pt-3 hover:underline"><a href="" alt="">Legal</a></div>
+            <div class="font-normal text-base text-gray-800 pt-3 hover:underline"><a href="" alt="">
+                    Privacy policy
+                </a></div>
+            <div class="font-normal text-base text-gray-800 pt-3 hover:underline"><a href="" alt="">
+                    Status
+                </a></div>
+        </div>
+        <div class="md:mt-0 cursor-pointer">
+            <div class="md:font-medium text-xl leading-7 font-gray-800 pb-3 font-bold">Get Updates and more</div>
+            <div class="flex">
+                <Input type="text" placeholder="Your email address"
+                    class="pl-3 pt-2 pb-1.5 text-sm font-normal leading-6 text-gray-600 pr-16 focus:outline-cyan-600"
+                    button="Subscribe">
+                <button
+                    class="h-10 w-11 bg-gradient-to-l from-cyan-700 to-sky-600  items-center justify-center flex focus:outline-cyan-600"><img
+                        src="https://i.ibb.co/pj1CNrG/Vectora.png" alt="Vectora" border="0"
+                        class="justify-center items-center">
+                </button>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        function toogleMenu(flag) {
+            value = document.getElementById("Menu");
+            if (flag) { value.classList.remove("hidden"); }
+            else { value.classList.add("hidden"); }
+        }
+
+        function tooglecross(flag) {
+            value = document.getElementById("cross");
+            if (flag) { value.classList.remove("hidden"); }
+            else { value.classList.add("hidden"); }
+        }
+    </script>
+
+</body>
